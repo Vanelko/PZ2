@@ -1,0 +1,313 @@
+.features-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    flex: 1;   
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.headline-one {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 100;
+    text-align: center;
+}
+
+.block-title {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 150%;
+}
+
+
+
+.ceramics {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.ceramics-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряд */
+    gap: 30px;
+}
+
+.ceramics-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ceramics-item h3 {
+    margin-top: 10px;
+}
+
+.ceramics-item p {
+    margin-top: 5px;
+}
+
+.ceramics-btn-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ceramics-btn {
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+    cursor: pointer;
+}
+
+/* Popular products */
+.popular {
+    max-width: 1100px;
+    margin: 60px auto;
+}
+
+.popular-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.popular-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.popular-item h3 {
+    margin-top: 12px;
+}
+
+.popular-item p {
+    margin-top: 5px;
+}
+
+.popular-btn-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.popular-btn {
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+    cursor: pointer;
+}
+
+/* Subscribe block */
+.subscribe {
+    background: #f7f7f7;
+    padding: 60px 0;
+    margin-top: 80px;
+}
+
+.subscribe-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subscribe-desc {
+    margin: 10px auto 30px;
+    max-width: 500px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe-form input {
+    padding: 12px 15px;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.subscribe-form button {
+    padding: 12px 25px;
+    background: #2c234d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* About section: text left, image right */
+.about-section {
+  width: 100%;
+  background: white;
+  padding: 60px 0;
+}
+
+.about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  padding: 0 20px;
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.about-title {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0 0 18px;
+  color: #2a254b;
+}
+
+.about-title-break {
+  display: block;
+}
+
+.about-text {
+  margin: 0 0 14px;
+  color: #6b6b73;
+  max-width: 560px;
+}
+
+.btn-light {
+  margin-top: 24px;
+  padding: 10px 20px;
+  background: #f6f6f6;
+  border: 1px solid #e7e7e7;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 320px;
+  max-width: 640px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .about-image {
+    order: -1;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: 320px;
+  }
+
+  .about-image img {
+    height: 100%;
+    object-position: center;
+  }
+
+  .about-content {
+    padding-top: 20px;
+  }
+}
+
+
+.footer {
+    background-color: #2A254B;
+    padding: 40px;
+    color: white;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+/* Заголовки колонок */
+.footer-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+/* Ссылки */
+.footer-col a {
+    display: block;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer-col a:hover {
+    opacity: 0.7;
+}
+
+/* копирайт */
+.footer p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+
+.mailing {
+    background-color: #2A254B;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+/* headline one */
+.headline-one {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+/* форма */
+.mailing-form {
+    display: flex;
+}
+
+.mailing-form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.mailing-form button {
+    padding: 12px 24px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
