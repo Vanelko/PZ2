@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
 </head>
-<body>
+
+<body id="top">
     <header class="header">
         <div class="header__inner">
 
@@ -25,10 +26,23 @@
                 <img src="assets/icons/User--avatar.png" alt="user" class="header__icon">
             </div>
         </div>
-            <nav align="center">
-                <a>Plant pots</a>   <a>Tables</a> <a>Chairs</a> <a>Crockery</a> <a>Tableware</a> <a>Cultery</a> 
-            </nav>
+
+        <button class="burger" id="burger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" id="nav">
+            <button class="nav-close" aria-label="Close menu">✕</button>
+            <a>Plant pots</a>
+            <a>Tables</a>
+            <a>Chairs</a>
+            <a>Crockery</a>
+            <a>Tableware</a>
+            <a>Cultery</a>
         </nav>
+
     </header>
 
     <nav class="nav">
@@ -256,5 +270,9 @@
         Copyright 2022 Avion LTD
     </div>
 </footer>
+
+<a href="#top" class="to-top">↑</a>
+
+<script src="scripts/menu.js"></script>
 </body>
 </html>

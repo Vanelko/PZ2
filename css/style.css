@@ -490,3 +490,22 @@ body {
 }
 
 
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: #000;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
