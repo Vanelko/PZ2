@@ -509,3 +509,7 @@ body {
     justify-content: center;
     gap: 32px;
 }
+
+.nav-close {
+    display: none;
+}
